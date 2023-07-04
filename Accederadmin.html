@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/Icono.png">
+	<link rel="stylesheet" type="text/css" href="css/Estilosaccad.css">
+	<link rel="stylesheet" type="text/css" href="css/styleadmi.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<title>Administrador</title>
+</head>
+<body style="background-color:#fafafa ;">
+	<div class="container-fluid ">
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-5 justify-content-center">
+				<form class="form-siginin " onsubmit="return validarusuario()" >
+					<div class="form-group pt-5">
+						<a href="Acceder.html"><img src="img/Logo.png"  style="width: 50%;"></a>
+					</div>
+					<div class="form-group pt-3">
+						<input type="text" class="form-control is-valid"
+						id="email1" name="email" placeholder="correo electronico">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control is-invalid" id="password1" name="password" placeholder="contraseña">
+					</div>
+					<div class="row justify-content-btween">
+						<div class="col-md-6">
+							<div class="form-check inline">
+								<input type="checkbox" class="form-check-input" id="recordar">
+								<label class="form-check-label" for="recordar">Recordar</label>
+							</div>	
+						</div>
+						<div class="col-md-6 ">
+							<a href="#" id="recu">Olvido contraseña</a>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-success btn-block mt-3 mb-4" id="btnalerta">Ingresar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+
+<script type="text/javascript">
+	function validarusuario(){
+		var contra =document.getElementById("recu").value;
+
+		if (contra === "") {}
+	}
+</script>
+
+
+
+<script type="text/javascript">
+	function validarusuario(){
+		var email = document.getElementById("email1").value;
+        var clave = document.getElementById("password1").value;
+
+        if (email ==="admin@gmail.com" && clave === "admin") {
+        	window.location.href="InterfazAdmin.html";
+        	return false;
+        }
+
+        if (email ==="cliente@gmail.com" && clave === "cliente") {
+        	window.location.href="InterfazCliente.html";
+        	return false;
+        }
+        
+        else{
+        	swal.fire({
+            		title: "Credenciales",
+            		text: "Acceso incorrecto, intenta nuevamente!",
+            		icon: "error",
+            	});
+
+   				return false;
+
+        }
+
+	}
+	
+
+</script>

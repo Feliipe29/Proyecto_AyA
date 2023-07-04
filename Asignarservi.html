@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/EstilosSolicitudes.css">
+	<link rel="shortcut icon" href="img/Icono.png">
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<title>Administrador</title>
+</head>
+<body>
+
+<div class="container-fluid">
+		<!-- 1. Barra de Navegación -->
+
+		<div class="row ">
+			<div class="col">
+				<nav class="navbar navbar-expand-md gris4 ">
+
+					<a href="InterfazAdmin.html"><img src="img/Logo.png" style="width: 80%;"></a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Menu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="Menu" >
+						<ul class="navbar-nav">
+
+							<li class="nav-item"><a href="InterfazAdmin.html" class="nav-link active"><b>Inicio</b></a></li>
+
+							<li class="nav-item"><a href="Index.html" class="nav-link active"></i><b>Cerrar Sesión</b></a></li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Menu lateral de Navegación -->
+		<div class="row">
+			<div class="col-md-3">
+				<nav id="Menu" class="d-md-block  collapse azul5 pl-3">
+					<div class="navTitulo pt-5">
+						<h3><i class="fas fa-user"></i><div class="Usu"> Administrador</div></h3>
+					</div>
+					<div class="navTitulo pt-5">
+						<h3>Inventario</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="Producto.html" class="nav-link">Productos</a></li>
+						<li class="nav-item"><a href="Modulos/RegistroP.html" class="nav-link">Registrar Producto</a></li>	
+					</ul>
+					<div class="navTitulo pt-5">
+						<h3>Ventas</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li clas="nav-item"><a href="Modulos/Ventas.html"  class="nav-link">Ventas</a></li>
+						<li clas="nav-item"><a href="Modulos/RegistroV.html"  class="nav-link">Registrar Venta</a></li>
+					</ul>
+					<div class="navTitulo pt-5">
+						<h3>Servicios</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li clas="nav-item"><a href="Solicitudpedidos.html" class="nav-link" >Solicitudes de Instalación</a></li>
+						<li clas="nav-item"><a href="Asignarservi.html" class="nav-link" >Asignar Servicio</a></li>
+					</ul>
+				</nav>
+			</div>
+
+
+			<div class="col-md-9">
+				<h2 class="titu"><b><center style="margin-top: 5%;">DETALLES DEL PEDIDO</center>
+				</b></h2><br>
+				<div class="row">
+					<div class="ca col-md-4">
+						<center>
+							<label for="tipDoc"><b>Nombre del Cliente: </b></label><br>
+							<input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombres Completos" required><br>
+						</center>
+					</div>
+
+					<div class="col-md-4">
+						<label for="tipDoc"><b>Tipo de Documento: </b></label><br>
+							<select class="form-control" id="tipDoc" name="tipDoc" required>
+								<option value="cc">Cédula de Ciudadanía</option>
+								<option value="ce">Cédula Extranjera</option>
+								<option value="pas">Pasaporte</option>
+							</select>
+					</div>
+
+					<div class="col-md-4">
+						<center>
+							<label for="Direc"><b>Identificación: </b></label><br>
+							<input class="form-control" type="text" id="Direc" name="Direc" placeholder="N° de Identificación" required><br>
+						</center>
+					</div>
+
+					<div class="col-md-4">
+						<center>
+							<label for="nacimiento"><b>Fecha de Instalación: </b></label><br>
+							<input class="form-control" type="date" id="nacimiento" name="nacimiento" min="2021-09-16" max="2021-12-20" required><br><br>
+						</center>
+					</div>
+
+					<div class="col-md-4">
+						<center>
+							<label for="Direc"><b>Dirección donde se prestara el servicio: </b></label><br>
+							<input class="form-control" type="text" id="Direc" name="Direc" placeholder="Dirección" required><br>
+						</center>
+					</div>
+
+					<div class="col-md-4">
+						<center>
+							<label for="Direc"><b>Precio de Instalación: </b></label><br>
+							<input class="form-control" type="text" id="Direc" name="Direc" placeholder="Precio" required><br>
+						</center>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-4 proc">
+						<center>
+							<label for="Direc"><b>Producto: </b></label><br>
+							<input class="form-control" type="text" id="Direc" name="Direc" placeholder="Producto" required><br>
+						</center>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<center><h2 class="titu" style="margin-top: 2%;">DETALLES TECNICO</h2></center><br>
+					</div>
+
+					<div class=" col-md-4">
+						<center>
+							<label for="tipDoc"><b>Nombre del Tecnico: </b></label><br>
+							<input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombres Completos" required><br>
+						</center>
+					</div>
+
+					<div class="col-md-4">
+						<label for="tipDoc"><b>Tipo de Documento: </b></label><br>
+							<select class="form-control" id="tipDoc" name="tipDoc" required>
+								<option value="cc">Cédula de Ciudadanía</option>
+								<option value="ce">Cédula Extranjera</option>
+								<option value="pas">Pasaporte</option>
+							</select>
+					</div>
+
+					<div class="col-md-4">
+						<center>
+							<label for="Direc"><b>Identificación: </b></label><br>
+							<input class="form-control" type="text" id="Direc" name="Direc" placeholder="N° de Identificación" required><br>
+						</center>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+						<div class="col-md-6">
+							<center>
+								<input class="btn-outline-danger form-control" id="enviar" type="submit" value="Guardar Pedido" onclick="alert('El pedido se guardo exitosamente al cliente le llegara al Correo los datos del tecnico y detalles de su instalación.')">
+							</center>
+						</div>
+					</div>
+
+			</div>
+
+
+
+	<!-- links -->
+	<script type="Css/bootstrap.bundle.min.js"></script>
+	<script type="Css/popper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<!-- links -->
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/Estilos.css">
+	<link rel="shortcut icon" href="img/Icono.png">
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script type="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+	<title>Login</title>
+</head>
+<body>
+
+	<div class="container-fluid form">
+
+		<div class="row justify-content-center mt-5">
+
+
+			<div class="col-md-6 bg-light">
+				
+					 <form class="form-signin" onsubmit="return validarUsuario()"  >
+
+
+					<div class="form-group pt-5" >
+						<center><a href="Index.html"><img class="Ini" src="img/Logo.png" class="img-fluid"></a></center>
+					</div>
+					<div class="form-group pt-3">
+						
+						<input required type="text" class="form-control" id="email" name="email" placeholder="Correo electrónico">
+					</div>
+					<div class="form-group">
+						
+						<input required type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+					</div>
+					<div class="row justify-content-between">
+						<div class="col-sm-4">
+							<div class="form-check inline">
+								<input class="form-check-input" type="checkbox" value="" id="recordar">
+								<label class="form-check-label" for="recordar">Recordar</label>
+
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+
+							<a href="#">Olvido Contraseña</a>
+						</div>
+					</div>
+					
+					
+					<button type="submit" class="btn btn-success btn-block mt-3 mb-4" id="btnAlerta" >
+					Ingresar</button>
+
+
+					
+
+            </button>
+        </div>
+					  
+				</form>
+
+
+				
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+	
+
+	<!-- script -->
+	 <script type="text/javascript" src="../sweetAlert/sweetalert.min.js"></script>
+
+
+
+  <!-- Login -->
+    <script type="text/javascript">
+
+        function validarUsuario() {
+            var email = document.getElementById("email").value;
+            var clave = document.getElementById("password").value;
+
+            //El rol admin ingresa al dashboard con las funcionalidades de su rol
+
+            if (email === "admin@gmail.com" && clave === "admin") {
+                
+                window.location.href = "InterfazAdmin.html";
+                return false;
+            } 
+
+             //El rol otro usuario ingresa al dashboard con las funcionalidades de su rol
+            if (email === "cliente@gmail" && clave === "client123") {
+                
+                window.location.href = "InterfazCliente.html";
+                return false;
+            } 
+            
+            
+            else {
+            	Swal.fire({
+  				icon: 'error',
+  				title: 'Oops...',
+  				text: 'Something went wrong!',
+  				footer: '<a href="">Why do I have this issue?</a>'
+				}) 
+				return false;
+            }
+        }
+
+       
+
+    </script>
+
+   
+	<!-- links -->
+	<script type="Css/bootstrap.bundle.min.js"></script>
+	<script type="Css/popper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<!-- links -->
+
+</body>
+</html>
+	
+	

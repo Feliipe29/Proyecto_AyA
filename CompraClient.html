@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/EstilosCompra.css">
+	<link rel="shortcut icon" href="img/Icono.png">
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<title>Realizar Compra</title>
+</head>
+<body>
+	<div class="container-fuid">
+	<div class="row">
+		<div class="col-md-12 p-4 azul5">
+			<a href="InterfazCliente.html"><img class="Logo" src="img/Logo.png"></a>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-md-2 p-1 azul5" ><b><a class="bar" href="InterfazCliente.html"><center><p>INICIO</p></center></a></b></div>
+	<div class="col-md-2 p-1 gris4"><b><a class="bar" href="ConocenosClient.html"><center><p>CONÓCENOS</p></center></a></b></div>
+	<div class="col-md-2 p-1 azul5"><b><a class="bar" href="ContactenosClient.html"><center><p>CONTÁCTENOS</p></center></a></b></div>
+	<div class="col-md-2 p-1 gris4"><b><a class="bar" href="ServiciosClient.html"><center><p>SERVICIOS</p></center></a></b></div>
+	<div class="col-md-2 p-1 azul5"><b><a class="bar" href="ProductosClient.html"><center><p>PRODUCTOS</p></center></a></b></div>
+	<div class="col-md-2 p-1 gris4"><b><a class="bar" href="Index.html"><center><p>CERRAR SESIÓN</p></center></a></b></div>
+</div>
+<br>
+
+<div class="row justify-content-center">
+	<div class="col-md-12">
+		<h2 class="Tit"><b>Realizando Compra...</b></h2>
+	</div>
+</div><br><br>
+
+
+<div class="row justify-content-center">
+	<div class="col-md-6">
+		<p><center>Ya casi terminamos con el proceso de compra!!<br>*Llena todos los campos para poder terminar...</center></p><br>
+	<form class="needs-validation" novalidate>
+
+	<div class="col-md-12">
+		<label for="validationCustom02"><b>Nombre Completo: </b></label>
+     	<input placeholder="Nombres Completos" type="text" class="form-control" id="validationCustom02" required>
+      	<div class="invalid-feedback">
+        	Ingresa tus datos!
+        </div>
+    </div><br>
+
+	<div class="col-md-12">
+		<label for="validationCustom02"><b>Correo Electronico: </b></label>
+     	<input placeholder="Correo Electrónico" type="text" class="form-control" id="validationCustom02" required>
+      	<div class="invalid-feedback">
+        	Ingresa tus datos!
+        </div>
+    </div><br>
+
+	<div class="col-md-12">
+		<label for="validationCustom02"><b>Dirección donde sera entregado el producto: </b></label>
+     	<input placeholder="Dirección de entrega" type="text" class="form-control" id="validationCustom02" required>
+      	<div class="invalid-feedback">
+        	Ingresa tus datos!
+        </div><br>
+    </div>
+
+    <div class="col-md-12">
+    <label for="validationCustom04"><b>Tipo de Documento</b></label>
+      <select class="custom-select" id="validationCustom04" required>
+        <option selected disabled value="">Seleccione...</option>
+        <option >Cédula de Ciudadanía</option>
+		<option >Cédula Extranjera</option>
+		<option >Pasaporte</option>
+      </select>
+      <div class="invalid-feedback">
+        	Ingresa tus datos!
+      </div>
+	</div><br>
+
+	<div class="col-md-12">
+		<label for="validationCustom02"><b>N° Documento: </b></label>
+     	<input placeholder="Número de Identificación" type="text" class="form-control" id="validationCustom02" required>
+      	<div class="invalid-feedback">
+        	Ingresa tus datos!
+        </div><br>
+    </div>
+
+    <div class="col-md-12">
+		<label for="validationCustom02"><b>Telefono: </b></label>
+     	<input placeholder="Número Telefonico" type="text" class="form-control" id="validationCustom02" required>
+      	<div class="invalid-feedback">
+        	Ingresa tus datos!
+        </div><br>
+    </div>
+
+	
+		<button class="btn btn-outline-danger btn-block mt-3 mb-4" type="submit" onclick="alert('Tu compra fue realizada con Exito!! Tu factura llegará a tu Correo anteriormente solicitado...')">INGRESAR</button>
+	</div>
+	</form>
+
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+	</div>
+</div>
+
+
+
+
+	<!-- links -->
+	<script type="Css/bootstrap.bundle.min.js"></script>
+	<script type="Css/popper.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<!-- links -->
+
+</body>
+</html>

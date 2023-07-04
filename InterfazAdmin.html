@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/EstilosAdmin.css">
+	<link rel="shortcut icon" href="img/Icono.png">
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<title>Administrador</title>
+</head>
+<body>
+
+<div class="container-fluid">
+		<!-- 1. Barra de Navegación -->
+
+		<div class="row ">
+			<div class="col">
+				<nav class="navbar navbar-expand-md gris4 ">
+
+					<a href="InterfazCliente.html"><img src="img/Logo.png" style="width: 80%;"></a>
+					<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Menu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="Menu" >
+						<ul class="navbar-nav">
+
+							<li class="nav-item"><a href="InterfazAdmin.html" class="nav-link active"><b>Inicio</b></a></li>
+
+							<li class="nav-item"><a href="Index.html" class="nav-link active"></i><b>Cerrar Sesión</b></a></li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Menu lateral de Navegación -->
+		<div class="row">
+			<div class="col-md-3">
+				<nav id="Menu" class="d-md-block  collapse azul5 pl-3">
+					<div class="navTitulo pt-5">
+						<h3><i class="fas fa-user"></i><div class="Usu"> Administrador</div></h3>
+					</div>
+					<div class="navTitulo pt-5">
+						<h3>Inventario</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="Producto.html" class="nav-link">Productos</a></li>
+						<li class="nav-item"><a href="Modulos/RegistroP.html" class="nav-link">Registrar Producto</a></li>	
+					</ul>
+					<div class="navTitulo pt-5">
+						<h3>Ventas</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li clas="nav-item"><a href="Modulos/Ventas.html"  class="nav-link">Ventas</a></li>
+						<li clas="nav-item"><a href="Modulos/RegistroV.html"  class="nav-link">Registrar Venta</a></li>
+					</ul>
+					<div class="navTitulo pt-5">
+						<h3>Servicios</h3>
+					</div>
+					<ul class="navbar-nav">
+						<li clas="nav-item"><a href="Solicitudpedidos.html" class="nav-link" >Solicitudes de Instalación</a></li>
+						<li clas="nav-item"><a href="Asignarservi.html" class="nav-link" >Asignar Servicio</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col-md-9">
+				<h2 class="titu"><b><center style="margin-top: 5%;">¡¡BIENVENIDO ADMIN!!</center>
+				</b></h2><br>
+				<div class="row justify-content-center">
+					<div class="col-md-12">
+						<p><center class="titu">¡¡Que bien de que estes aquí, recuerda de que tienes los diferentes modulos y sus funciones en el dashboard!!</center></p><br><br>
+						<center><h2 class="titu"> PRDUCTOS MÁS VENDIDOS </h2></center>
+
+
+	<div class="row">
+		<div class="col">
+			<canvas id="grafico"></canvas>
+		</div>
+		<div class="col">
+			<canvas id="grafico2"></canvas>
+		</div>
+	</div>
+
+	
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script>
+
+var ctx = document.getElementById("grafico").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Griferias ', 'Lavamanos', 'Duchas', 'Mesones', 'Secadores de mano', 'Dispensadores'],
+        datasets: [{
+            label: 'Ventas',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+	
+<script>
+
+var ctx = document.getElementById("grafico2").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Griferias ', 'Lavamanos', 'Duchas', 'Mesones', 'Secadores de mano', 'Dispensadores'],
+        datasets: [{
+            label: 'Ventas',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
