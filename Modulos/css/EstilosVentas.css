@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*verde*/
+.verde1{
+    background: #d8f3dc;
+}
+.verde2{
+    background: #b7e4c7;
+}
+
+.verde3{
+    background: #95d5b2;
+}
+.verde4{
+    background: #74c69d;
+}
+.verde5{
+    background: #52b788;
+}
+.verde6{
+    background: #40916c;
+}
+/*verde*/
+
+/*azul*/
+.azul1{
+    background: #48cae4;
+}
+.azul2{
+    background: #00b4d8;
+}
+.azul3{
+    background: #0096c7;
+}
+
+.azul4{
+    background: #0077b6;
+}
+.azul5{
+    background: #d0dddd;
+}
+/*azul*/
+
+/*naranja*/
+.nar1{
+    background: #ffbf69;
+}
+.nar2{
+    background: #f48c06;
+}
+.nar3{
+    background: #bb4d00;
+}
+/*naranja*
+
+/*gris*/
+.gris1{
+    background: #adb5bd;
+}
+.gris2{
+    background: #6c757d;
+}
+.gris3{
+    background: #495057;
+}
+.gris4{
+    background: #eddcd2;
+}
+/*gris*/
+
+/*morado*/
+.morado1{
+    background: #9d4edd;
+}
+.morado2{
+    background: #7b2cbf;
+}
+.morado3{
+    background: #ecbcfd;
+}
+/*morado*/
+
+/*rojo*/
+.red1{
+    background: #ff4d6d;
+}
+.red2{
+    background: #c1121f;
+}
+/*rojo*/
+
+/*amarillo*/
+.ama1{
+    background: #ffc300;
+}
+.ama2{
+    background: #ffe566;
+}
+/*amarillo*/
+
+/*cafe*/
+.cafe1{
+    background: #ddbea9;
+}
+.cafe2{
+    background: #CAC2BA;
+}
+/*cafe*/
+
+
+
+.navTitulo.pt-5{
+    font-family: 'Acme', sans-serif;
+}
+
+
+a.nav-link{
+    color: black;
+}
+
+
+.nav-link:focus, .nav-link:hover{
+    font-size: 18px;
+    color: #a68a64;
+}
+
+.col-md-12.p-1.azul5.pie {
+    width: 100%;
+    margin-top: 12%;
+}
+
+nav#Menu {
+    height: 110%;
+}
+
+.titu{
+    font-family: 'Acme', sans-serif;
+}
+
+.col-md-4.proc {
+    margin-top: -2%;
+}
+
+.Usu {
+    float: right;
+    margin-right: 34%;
+}

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*verde*/
+.verde1{
+	background: #d8f3dc;
+}
+.verde2{
+	background: #b7e4c7;
+}
+
+.verde3{
+	background: #95d5b2;
+}
+.verde4{
+	background: #74c69d;
+}
+.verde5{
+	background: #52b788;
+}
+.verde6{
+	background: #40916c;
+}
+/*verde*/
+
+/*azul*/
+.azul1{
+	background: #48cae4;
+}
+.azul2{
+	background: #00b4d8;
+}
+.azul3{
+	background: #0096c7;
+}
+
+.azul4{
+	background: #0077b6;
+}
+.azul5{
+	background: #d0dddd;
+}
+/*azul*/
+
+/*naranja*/
+.nar1{
+	background: #ffbf69;
+}
+.nar2{
+	background: #f48c06;
+}
+.nar3{
+	background: #bb4d00;
+}
+/*naranja*
+
+/*gris*/
+.gris1{
+	background: #adb5bd;
+}
+.gris2{
+	background: #6c757d;
+}
+.gris3{
+	background: #495057;
+}
+.gris4{
+	background: #eddcd2;
+}
+/*gris*/
+
+/*morado*/
+.morado1{
+	background: #9d4edd;
+}
+.morado2{
+	background: #7b2cbf;
+}
+.morado3{
+	background: #ecbcfd;
+}
+/*morado*/
+
+/*rojo*/
+.red1{
+	background: #ff4d6d;
+}
+.red2{
+	background: #c1121f;
+}
+/*rojo*/
+
+/*amarillo*/
+.ama1{
+	background: #ffc300;
+}
+.ama2{
+	background: #ffe566;
+}
+/*amarillo*/
+
+/*cafe*/
+.cafe1{
+	background: #ddbea9;
+}
+.cafe2{
+	background: #CAC2BA;
+}
+/*cafe*/
+
+.Logo{
+	float: left;
+	margin-left: 15px;
+	width: 10%;
+}
+
+.Tit{
+	float: right;
+	margin-top: 3%;
+	margin-right: 40%;
+	font-family: 'Acme', sans-serif;
+}
+
+.bar{
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.bar:hover{
+	font-size: 18px;
+	color: #a68a64;
+	text-decoration: none;
+}
+
+.bot:hover{
+	color: #CAC2BA;
+	text-decoration: none;
+}
+
+.col-md-4.azul5.pie{
+	margin-top: 4%;
+}
+
+.Ma{
+	font-family: 'Acme', sans-serif;
+}
+
+.col-md-8.dj{
+	border: double;
+	margin-left: 2%;
+}
+.Ma.mj{
+	margin-top: 5%;
+}
+
+#enviar{
+	background: #d0dddd ;
+	text-decoration: none;
+	padding: 15px 25px;
+	color: black;
+	font-family: 'Acme', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 17px;
+}
+
+#enviar:hover{
+	background: #eddcd2;
+	text-decoration: none;
+	padding: 15px 25px;
+	color: black ;
+	font-weight: bold;
+}
+
+.col-md-3 {
+    margin-left: 3%;
+}
+
+.col-md-12.p-1.azul5.pie{
+	margin-top: 4%;
+}
+
+footer{
+ 	color: black;
+ 	width: 98.6%;
+	text-align: center;
+	font-family: 'Acme', sans-serif; 
+	font-size: 20px;
+	background-color: #d0dddd;
+	margin-top: 70px;
+}
+
+img.log{
+	float: left;
+	width: 10%;
+}
+
+.form{
+	margin-top: -6%;
+}
+
+.Pad{
+	margin: 5px;
+}
+
+img{
+	width: 100%;
+}
+img.Ini{
+	width: 40%;
+}
+
+.row.justify-content-center.mt-5 {
+    width: 155%;
+    margin-left: -22%;
+}
+
+.col-md-4 {
+    margin-left: 13%;
+}
+
+.col-md-12.ini {
+    margin-left: 41%;
+}

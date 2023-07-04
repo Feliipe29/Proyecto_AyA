@@ -1,0 +1,17 @@
+*{
+	box-sizing:border-box;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.texto{
+	text-align: center;
+	 
+}
+.borde{
+	border:2px solid black;
+	text-align: center;
+}

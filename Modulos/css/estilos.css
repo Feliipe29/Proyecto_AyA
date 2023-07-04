@@ -1,0 +1,56 @@
+body{
+	background-color: #CAC2BA ;
+}
+header, .alert{
+	z-index:  100;
+}
+.description{
+	height:  25px;
+	overflow: hidden;
+	transition: height .3s ease-in .3s;
+}
+.description:hover{
+	height: 80px;
+}
+.carrito{
+	min-height: 90vh;
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
+}
+.table_productos{
+	display: flex;
+}
+.table_productos > img{
+	width: 9rem;
+	object-fit: contain;
+	border-radius: 6px;
+	margin-right: 20px;
+}
+.table__cantidad > input{
+	width: 40px;
+	border: none;
+	outline: 0;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.hide, .remove{
+	display: none;
+}
+.bot{
+	background: #008000 ;
+	text-decoration: none;
+	padding: 15px 25px;
+	color: #000;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	border-radius: 17px;
+	margin-left: 45%;
+}
+
+.log {
+    width: 10%;
+    margin-left: 2%;
+}
